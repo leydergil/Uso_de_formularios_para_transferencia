@@ -30,3 +30,6 @@ body{
 	color:#fff;
 	background-color:#26ADE4;
 }
+#escenario{
+	visibility: hidden;
+}

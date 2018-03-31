@@ -1,12 +1,12 @@
 <?php
-function transaccionesUsuario($fila,$puesto,$accion,$ListEscenario){
+function transaccionesUsuario($fila,$puesto,$accion,$listadoSillas){
         //Se evalua la opción del usuario dependiendo de lo contenido en el Array
         //Si el puesto elegido por el usuario esta libre se modifica el Array con la acción elegida
-        if($ListEscenario[$fila-1][$puesto-1]=="L"){
-            $ListEscenario[$fila-1][$puesto-1]=$accion;
+        if($listadoSillas[$fila-1][$puesto-1]=="L"){
+            $listadoSillas[$fila-1][$puesto-1]=$accion;
         }
         //Si el puesto elegido por el usuario esta vendido se muestra una alerta con notificando en cada caso lo sucedido
-        else if($ListEscenario[$fila-1][$puesto-1]=="V"){
+        else if($listadoSillas[$fila-1][$puesto-1]=="V"){
             echo "<script>alert('El puesto ya esta vendido";
             if($accion=="L"){echo " no se puede liberar";}
             else if($accion=="R"){echo " no se puede reservar";}
@@ -15,16 +15,16 @@ function transaccionesUsuario($fila,$puesto,$accion,$ListEscenario){
             echo "</script>'";
         }
         //Si el puesto elegido por el usuario esta reservado y la accion es reservar se muestra una alerta indicando que ya esta reservado
-        else if($ListEscenario[$fila-1][$puesto-1]=="R" && $accion=="R"){
+        else if($listadoSillas[$fila-1][$puesto-1]=="R" && $accion=="R"){
             echo "<script>
             alert('El puesto ya esta Reservado');
             </script>'";
         }
         //Si el puesto esta reservado y la accion es diferente a reservar se modifica el array con la accion elegida por el usuario
-        else if($ListEscenario[$fila-1][$puesto-1]=="R" && $accion!="R"){
-            $ListEscenario[$fila-1][$puesto-1]=$accion;
+        else if($listadoSillas[$fila-1][$puesto-1]=="R" && $accion!="R"){
+            $listadoSillas[$fila-1][$puesto-1]=$accion;
         }
         //Se retorna el Array modificado
-        return $ListEscenario;
+        return $listadoSillas;
 }
 ?>
