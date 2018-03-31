@@ -21,3 +21,10 @@ Para cumplir con esta evidencia tenga en cuenta lo siguiente:
 - Un puesto en estado reservado (R) puede ser pasado a estado vendido (V) o liberado (L).
 - Un puesto en estado vendido (V) no puede cambiar a estado reservado (R) ni liberado (L).
 - Siempre que el usuario intente hacer una operación no valida (como pasar un puesto en estado vendido (V) ha estado liberado (L)), el sistema debe mostrarle un mensaje (puede hacerse usando JavaScript) que le indique que la operación no pudo realizarse.
+
+- Elemento de lista 1
+- Elemento de lista 2
+* Elemento de lista 3
+* Elemento de lista 4
++ Elemento de lista 5
++ Elemento de lista 6
