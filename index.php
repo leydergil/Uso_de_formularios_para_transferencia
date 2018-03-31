@@ -4,14 +4,14 @@
 <head>
     <title>Taller: Uso de formularios para transferencia</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <?php   
 require_once("teatro.php"); //Funciones para impirmir las sillas del teatro
-require_once("transacciones.php");
+require_once("transacciones.php");//Funcion para Cambiar el esatdo de la Silla.
 //Se ejecuta el if cuando el usuario envie la informacion del formulario
 if(isset($_POST["Enviar"])){
-                //Se captura la información enviada del formulario
+                //Se captura la información enviada del formulario dentro de las siguientes variables
                 $fila = $_POST['fila'];
                 $puesto= $_POST['puesto'];
                 $accion= $_POST['accion'];

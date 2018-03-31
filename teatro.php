@@ -3,7 +3,7 @@ function sillasTeatro($ListEscenario){
     //Se crea la tabla y sus encabezados
 echo "<table class='tg' border='1' style='margin:auto;'>";
             echo "<tr>";
-            echo "<th colspan='6'>Sillas del Teatro</th>";
+            echo "<th colspan='6'>SILLAS DEL TEATRO</th>";
             echo "<tr>";
                 /*-- Se crean los encabezados de las tabla*/
                 echo "<th></th>
