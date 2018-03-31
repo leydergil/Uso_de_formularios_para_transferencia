@@ -11,9 +11,9 @@ El teatro tiene una sala de 5 filas y cada una cuenta con 5 sillas.
 
 Para cumplir con esta evidencia tenga en cuenta lo siguiente:
 
-1. Realice una interfaz sencilla que le muestre al usuario el teatro y los controles necesarios para que elija la fila y el puesto (<input> tipo text) y, si quiere reservar, comprar o liberar una silla (<input> tipo radio o <select>).
+ 1. Realice una interfaz sencilla que le muestre al usuario el teatro y los controles necesarios para que elija la fila y el puesto (<input> tipo text) y, si quiere reservar, comprar o liberar una silla (<input> tipo radio o <select>).
  
- 2. Para las transacciones se tienen las siguientes reglas:
+2. Para las transacciones se tienen las siguientes reglas:
 - Solo se modifica la información de un puesto a la vez.
 - Si el puesto está libre debe aparecer la letra “l” en mayúscula (l), si el puesto está reservado debe mostrar la letra “R” en mayúscula (R), si el puesto está vendido debe aparecer la letra “V” en mayúscula (V).
 - Un puesto en estado libre (L) puede ser pasado a estado vendido (V) (mediante la opción comprar) o reservado (R).
