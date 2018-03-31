@@ -5,16 +5,16 @@ function transaccionesUsuario($fila,$puesto,$accion,$listadoSillas){
         if($listadoSillas[$fila-1][$puesto-1]=="L"){
             $listadoSillas[$fila-1][$puesto-1]=$accion;
         }
-        //Si el puesto elegido por el usuario esta vendido se muestra una alerta con notificando en cada caso lo sucedido
+        //Si el puesto elegido por el usuario esta vendido se muestra una alerta
         else if($listadoSillas[$fila-1][$puesto-1]=="V"){
-            echo "<script>alert('El puesto ya esta vendido";
-            if($accion=="L"){echo " no se puede liberar";}
-            else if($accion=="R"){echo " no se puede reservar";}
-            else if($accion=="V"){echo " no se puede volver a vender";}
+            echo "<script>alert('El puesto ya se encuentra vendido";
+            if($accion=="L"){echo " no se puede liberar porque ya esta vendido";}
+            else if($accion=="R"){echo " no se puede reservar porque ya esta vendido";}
+            else if($accion=="V"){echo " El puesto ya esta vendido y no se puede vover a vender";}
             echo "')";
             echo "</script>'";
         }
-        //Si el puesto elegido por el usuario esta reservado y la accion es reservar se muestra una alerta indicando que ya esta reservado
+        //Si el puesto elegido por el usuario esta reservado y la accion es reservar se muestra una alerta indicando
         else if($listadoSillas[$fila-1][$puesto-1]=="R" && $accion=="R"){
             echo "<script>
             alert('El puesto ya esta Reservado');
