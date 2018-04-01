@@ -17,14 +17,14 @@ Realice una interfaz sencilla que le muestre al usuario el teatro y los controle
 ### Segundo
 Para las transacciones se tienen las siguientes reglas:
  
-Solo se modifica la información de un puesto a la vez.
+- Solo se modifica la información de un puesto a la vez.
 
-Si el puesto está libre debe aparecer la letra “l” en mayúscula (l), si el puesto está reservado debe mostrar la letra “R” en mayúscula (R), si el puesto está vendido debe aparecer la letra “V” en mayúscula (V).
+- Si el puesto está libre debe aparecer la letra “l” en mayúscula (l), si el puesto está reservado debe mostrar la letra “R” en mayúscula (R), si el puesto está vendido debe aparecer la letra “V” en mayúscula (V).
 
-Un puesto en estado libre (L) puede ser pasado a estado vendido (V) (mediante la opción comprar) o reservado (R).
+- Un puesto en estado libre (L) puede ser pasado a estado vendido (V) (mediante la opción comprar) o reservado (R).
 
-Un puesto en estado reservado (R) puede ser pasado a estado vendido (V) o liberado (L).
+- Un puesto en estado reservado (R) puede ser pasado a estado vendido (V) o liberado (L).
 
-Un puesto en estado vendido (V) no puede cambiar a estado reservado (R) ni liberado (L).
+- Un puesto en estado vendido (V) no puede cambiar a estado reservado (R) ni liberado (L).
 
-Siempre que el usuario intente hacer una operación no valida (como pasar un puesto en estado vendido (V) ha estado liberado (L)), el sistema debe mostrarle un mensaje (puede hacerse usando JavaScript) que le indique que la operación no pudo realizarse.
+- Siempre que el usuario intente hacer una operación no valida (como pasar un puesto en estado vendido (V) ha estado liberado (L)), el sistema debe mostrarle un mensaje (puede hacerse usando JavaScript) que le indique que la operación no pudo realizarse.
