@@ -1,6 +1,7 @@
-# Uso de formularios para transferencia de datos con PHP
+# Cursos de Desarrollo Web con PHP - SENA 2018
+## Uso de formularios para transferencia de datos con PHP
  
-## Actividad de aprendizaje 4
+## Actividad de aprendizaje 4.
 ### Evidencia: Taller “Uso de formularios para transferencia”
 
 El propósito de esta evidencia, es permitir que el usuario interactúe y seleccione opciones para una tarea específica.
