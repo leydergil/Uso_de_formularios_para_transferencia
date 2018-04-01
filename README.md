@@ -12,10 +12,10 @@ El teatro tiene una sala de 5 filas y cada una cuenta con 5 sillas.
 Para cumplir con esta evidencia tenga en cuenta lo siguiente:
 
  ### Primero
-Realice una interfaz sencilla que le muestre al usuario el teatro y los controles necesarios para que elija la fila y el puesto (<input> tipo text) y, si quiere reservar, comprar o liberar una silla (<input> tipo radio o <select>).
+Realice una interfaz sencilla que le muestre al usuario el teatro y los controles necesarios para que elija la fila y el puesto (<input> tipo text) y, si quiere reservar, comprar o liberar una silla ('<input> tipo radio o <select>').
 
 ### Segundo
- Para las transacciones se tienen las siguientes reglas:
+Para las transacciones se tienen las siguientes reglas:
  
 Solo se modifica la información de un puesto a la vez.
 
